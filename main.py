@@ -19,10 +19,10 @@ import pinecone # Importing to access __version__
 
 # SECTION 2: Configuration
 PINECONE_API_KEY = os.getenv('PINECONE_API_KEY')
-PINECONE_INDEX_NAME = "langchain-horoscope-demo" # Ensure this matches your desired index name
+PINECONE_INDEX_NAME = "ragbot" # Ensure this matches your desired index name
 HUGGINGFACE_API_KEY = os.getenv('HUGGINGFACE_API_KEY')
 
-EMBEDDING_MODEL_NAME = None # Uses default for HuggingFaceEmbeddings ('sentence-transformers/all-MiniLM-L6-v2')
+EMBEDDING_MODEL_NAME = "sentence-transformers/all-roberta-large-v1" # Uses default for HuggingFaceEmbeddings ('sentence-transformers/all-MiniLM-L6-v2')
 
 # --- IMPORTANT ---
 # Set to True for the first run to create the index and ingest documents.
